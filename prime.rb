@@ -12,8 +12,6 @@ n.times do |i|
   dict[i+2] = nil #start from 2 as we're ignoring 0 and 1.
 end
 
-# dict.each_key { |key| key.even? ? dict[key] = false : nil }
-
 [2,3,5,7,9].each do |y| #no need to do more processing than required. Only need to check for multiples of 2 with even numbers.
   dict.each do |k, v|
     k.is_multiple_of_x(y) ? dict[k] = false : nil
